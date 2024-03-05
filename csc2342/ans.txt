@@ -1,0 +1,10 @@
+U = {java python php perl rust c++ ada }
+A = {java php rust c++ }
+B = {python php c++ }
+
+
+~A {python perl ada }
+A union B = {java python php rust c++ }
+A intersect B = {php c++ }
+A - B = {java rust }
+A xor B = {java python rust }
