@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <title>Emma Jerrier</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+         <style>
+            * {box-sizing: border-box;}
+            body {font-family: Verdana, sans-serif;}
+            .mySlides {display: none;
+            text-align:center;}
+            img {vertical-align: middle;}
+
+            /* Slideshow container */
+            .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            }
+
+            /* Caption text */
+            .text {
+            color: #000000;
+            background-color: #f3f3f3;
+            opacity: 50%;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: sticky;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+            }
+
+            /* Number text */
+            .numbertext {
+            color: #f2f2f2;
+            opacity: 50%;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+            }
+
+            /* The dots/bullets/indicators */
+            .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+            }
+
+            .active {
+            background-color: #717171;
+            }
+
+            /* Fading animation */
+            .fade {
+            animation-name: fade;
+            animation-duration: 2s;
+            }
+
+            @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+            }
+         </style>
+    <header>
+        <div id="top-header">
+            <nav>
+                <div id="menu">
+                    <ul>
+                        <li class="active"><a href="firstsite.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li id="contact-dropdown">
+                            <a href="#">Contact</a>
+                            <div class="contact-dropdown-content">
+                                <a href="mailto:jerrieremma@gmail.com">Email</a>
+                            </div>
+                        </li>
+                        <li><a href="booklist.html">Reading List</a></li>
+                        <li><a href="imagepage2.html">Favorite Things</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </div>
+    </header>
+   <h1>Emma's Favorite Things</h1>
+   <div class="slideshow container">
+      <div class="mySlides fade">
+         <div class="numbertext">1 / 5</div>
+         <img src="https://assets-global.website-files.com/64416928859cbdd1716d79ce/6441becd08843b0824a15e8c_andrew-huberman-hero.webp" alt="Andrew Huberman" height="400">
+         <div class="text">Someone I Admire: Andrew Huberman</div>
+   </div>
+
+   <div class="mySlides fade">
+      <div class="numbertext">2 / 5</div>
+  <img src="https://cdn.pixabay.com/photo/2019/07/27/09/05/red-panda-4366264_1280.jpg" alt="red panda" height="400">
+  <div class="text">My Favorite Animal: Red Panda</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="https://media.istockphoto.com/id/539115110/photo/colosseum-in-rome-and-morning-sun-italy.jpg?s=612x612&w=0&k=20&c=9NtFxHI3P2IBWRY9t0NrfPZPR4iusHmVLbXg2Cjv9Fs=" alt="Rome, Italy" height="400">
+  <div class="text">A Place I Would Love to Visit: Rome, Italy</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="https://m.media-amazon.com/images/M/MV5BMTE5ZjU5YzQtZjQ4Ni00NzVhLWE3NDQtMTEyNzgzNzU3OTYyXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg" alt="Taylor Swift" height="400">
+  <div class="text">My Favorite Entertainer: Taylor Swift</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/467642/940931/main-image" alt="The Unicorn Rests in a Garden" height="400">
+  <div class="text">A Work of Art I Admire: The Unicorn Rests in a Garden (The Unicorn Tapestries)</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+
+<p>The above slideshow is some of my favorite things! I really admire Andrew Huberman, he is a professor at Stanford and runs a podcast called <a href="https://www.hubermanlab.com/">the Huberman Lab</a>. My favorite animal is a red panda! They are totally adorable. Somewhere I would love to travel one day is Rome, and I'm currently taking Italian to hopefully get there. My favorite entertainer is Taylor Swift, who I saw at the Eras Tour. My favorite art piece is The Unicorn Rests in a Garden which is a tapestry at the MET I saw last summer.</p>
+
+</body>
+</html> 

@@ -1,0 +1,163 @@
+
+html, body{
+    height: 100%;
+	width: auto;
+}
+body{
+    background-color: rgb(255, 255, 255);   
+	margin: 0px;
+    padding: 5px;
+    background: #ffffff;
+    font-family: 'Roboto';
+    font-size: 14pt;
+}    
+
+h1{
+   text-align: center;
+   font-size: 36pt;
+}   
+h2{
+    text-align:center;
+}
+p, ol, ul{
+    margin-top: 0;
+}
+ 
+p {
+    line-height: 180%;
+}
+#p2, ol, li {
+    margin-top: 0;
+    line-height: 180%;
+    text-align:center;
+}
+ 
+ol, ul{
+    padding: 0;
+    list-style: none;
+}
+
+.container{   
+    /* Set width of container to
+        1200px and align center */
+    margin: 0px auto;
+    max-width: 1200px;
+}
+
+header{
+overflow: hidden;
+}
+
+#top-header{
+    text-align: center;
+    height: 60px;
+}
+
+#menu{
+	width: 70%;
+	height: 100%;
+	margin: none;
+        overflow: visible;
+}
+#menu ul{
+    text-align:center;
+	margin: 0;
+	background: hsl(0, 0%, 100%);
+}
+	
+#menu li{
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+#menu li a, #menu li span{
+	display: inline-block;
+	padding: 0em 2em;
+	text-decoration: none;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 60px;
+        color: #000000;
+}
+
+		
+#menu li:hover a, #menu li span{
+	background: #e9b6de;
+	color: #000000;
+	border-left: 0px solid #000000;
+	text-decoration: none;
+}
+
+#footer #icon{
+	display: block;
+	margin-bottom: 0em;
+	font-size: 1em;
+}
+.copyright
+{
+	overflow: hidden;
+	padding: 0em 0em;
+	border-top: 5px solid rgba(0, 0, 0, 0.06);
+	text-align: center;
+	background: hsla(309, 100%, 66%, 0.436);
+}
+.copyright p
+{
+	letter-spacing: 1px;
+	font-size: 0.90em;
+	color: rgba(0, 0, 0, 0.6);
+}
+.copyright a
+{
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.6);
+}
+ul.contact{
+	margin: 0;
+	padding: 0em 0em 0em 0em;
+	list-style: none;
+}
+ul.contact li{
+	display: inline-block;
+	padding: 0em 0.10em;
+	font-size: 1em;
+}
+ul.contact li a{
+	color: #FFF;
+	display: inline-block;
+	background: hsla(309, 60%, 53%, 0.436);
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+
+/* Your existing styles... */
+
+#contact-dropdown:hover .contact-dropdown-content {
+    display: block;
+}
+
+.contact-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+}
+
+#contact-dropdown:hover .contact-dropdown-content {
+    display: block;
+}
+
+.contact-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.contact-dropdown-content a:hover {
+    background-color: #f1f1f1;
+}

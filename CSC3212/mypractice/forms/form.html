@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>D&D Character Creation Form</title>
+      <style>
+      html{
+         background-color:#e7c284;
+         text: #14100a;
+         secondary: #ca9842;
+         primary: #ebd9b9;
+         accent: #FF0000;
+      }
+      header{ text-align: center;
+      font-size:32px;
+      }
+
+
+      .center-button{
+        display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #e7c284; 
+      }
+
+      fieldset{border: 3px solid #FF0000;
+      background-color: #ebd9b9;
+      }
+      legend{ font-size: 20px;
+      border: 1px solid black;
+      background-color: #ebd9b9;
+      font-weight: bold;
+      }
+
+      datalist {
+         display: flex;
+         justify-content: space-between;
+         color: red;
+         width: 100%;
+      } 
+ 
+      .range{
+         width: 100%;
+      }
+
+      .slider{
+      -webkit-appearance: none;
+      width: 100%;
+      height: 25px;
+      background: #ca9842;
+      outline: none;
+      opacity: 0.7;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+      }
+    
+      .slider:hover {
+      opacity: 1;
+      }
+      .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 25px;
+      height: 25px;
+      background: #FF0000;
+      cursor: grabbing;
+      }
+      .geninfo{
+      display: table;
+      } 
+      .row{
+display: table-row;
+margin-bottom:10px;
+      }
+      .cell1, .cell2{
+display: table-cell;
+padding: 5px;
+      }
+      
+      </style>
+
+   </head>
+
+   <header>CREATE YOUR D&amp;D CHARACTER</header><br>
+   
+   <form>
+      <fieldset class="geninfo">
+
+     <p class="row"><label for="name" class="cell1">Name:</label><input type="text" id="name" name="name" class="cell2" tabindex=1></p>
+     <p class="row"><label for="phone" class="cell1">Phone Number:</label><input type="tel" id="phone" name="num" class="cell2" tabindex=2></p>
+     <p class="row"><label for="email" class="cell1">Email:</label><input type="email" name="email" id="email" class="cell2" tabindex=3></p>
+     <p class="row"><label for="user" class="cell1">Create A Username:</label><input type="text" name="username" id="username" class="cell2" tabindex=4></p>
+     <p class="row"><label for="pwd" class="cell1">Create A Password:</label><input type="password" class="cell2" tabindex=5></p>
+     <p class="row"><label for="charname" class="cell1">Create A Character Name:</label><input type="text" name="name" id="name" class="cell2" tabindex=6></p>
+      </fieldset><br>
+      
+           <fieldset>
+               <legend>Game Type</legend>
+               <label for="Game Type"><u>Please Check of Which D&amp;D Games You've Played</u></label><br>
+               <input type="checkbox" id="game1" name="game1" value="3e" tabindex=7>
+               <label for="game1"> I've played D&amp;D 3e</label><br>
+               <input type="checkbox" id="game2" name="game2" value="4e" tabindex=8>
+               <label for="game2"> I've played D&amp;D 4e</label><br>
+               <input type="checkbox" id="vehicle3" name="vehicle3" value="5e" tabindex=9>
+               <label for="game3"> I've played D&amp;D 5e</label><br>
+               <input type="checkbox" id="game4" name="game4" value="pathfinder" tabindex=10>
+               <label for="game4"> I've played Pathfinder</label><br>
+               
+            </fieldset><br> 
+
+            <fieldset>
+               <legend>Basic Character Info</legend>
+               <label for="Gender"><u>Your Character's Gender</u></label><br>
+               <label for="Female">Female</label>
+               <input type="radio" id="female" name="Gender" value="Female" tabindex=11><br>
+               <label for="Male">Male</label>
+               <input type="radio" id="male" name="Gender" value="Male" tabindex=12><br>
+               <label for="Other">Other</label>
+               <input type="radio" id="other" name="Gender" value="Other" tabindex=13><br>
+               <br><label for="Age">
+               Choose an Age For Your Character between 1 and 1,000:</label><br>
+               <input type="number" name="Age" id="Age" min="1" max="1000" tabindex=14> <br><br>
+            <div class="range">
+               <label for="Good">
+               <u>Choose Where Your Character would lie between Good and Evil:</u></label><br>
+               <input type="Range" class="slider" list="tickmarks" name="Good" id="Good" min="1" max="10" tabindex=15> <br>
+               <datalist id="tickmarks">
+               <option value="0" label="Good"></option>
+               <option value="1"></option>
+               <option value="2"></option>
+               <option value="3"></option>
+               <option value="4"></option>
+               <option value="5" label="Neutral"></option>
+               <option value="6"></option>
+               <option value="7"></option>
+               <option value="8"></option>
+               <option value="9"></option>
+               <option value="10" label="Evil"></option>
+               </datalist><br><br>
+
+               <label for="Lawful">
+               <u>Choose Where Your Character would lie between Lawful and Chaotic:</u></label><br>
+               <input type="Range" class="slider" list="tickmarks" name="Lawful" id="Lawful" min="1" max="10" tabindex=16> <br>
+               <datalist id="tickmarks">
+               <option value="0" label="Lawful"></option>
+               <option value="1"></option>
+               <option value="2"></option>
+               <option value="3"></option>
+               <option value="4"></option>
+               <option value="5" label="Neutral"></option>
+               <option value="6"></option>
+               <option value="7"></option>
+               <option value="8"></option>
+               <option value="9"></option>
+               <option value="10" label="Chaotic"></option>
+               </datalist>
+            </div>
+
+            <label for="myColor">Choose your Character's Favorite Color</label>
+            <input type="color" name="myColor" id="myColor" tabindex=17>
+            
+            </fieldset><br>
+
+            <fieldset>
+               <legend>Race</legend>
+               <select name="Race" id="Race" tabindex=18>
+                  <option value="Human">Human</option>
+                  <option value="Elf">Elf</option>
+                  <option value="Tiefling">Tiefling</option>
+                  <option value="Dwarf">Dwarf</option>
+                  <option value="Gnome">Gnome</option>
+                  <option value="Half-Elf">Half-Elf</option>
+                  <option value="Halfing">Halfing</option>
+                  <option value="Half-Orc">Half-Orc</option>
+                  <option value="Aarakocra">Aarakocra</option>
+               </select>
+            </fieldset><br>
+  
+            <fieldset>
+               <legend>Class</legend>
+               <label for="Class">Choose a Class:</label>
+               <select name="Class" id="Class" tabindex=19>
+                  <option value="Barabarian">Barbarian</option>
+                  <option value="Fighter">Fighter</option>
+                  <option value="Paladin">Paladin</option>
+                  <option value="Ranger">Ranger</option>
+                  <option value="Cleric">Cleric</option>
+                  <option value="Monk">Monk</option>
+                  <option value="Warlock">Warlock</option>
+                  <option value="Bard">Bard</option>
+                  <option value="Druid">Druid</option>
+                  <option value="Rogue">Rogue</option>
+                  <option value="Wizard">Wizard</option>
+                  <option value="Artificer">Artificer</option>
+                  <option value="Sorcerer">Sorcerer</option>
+               </select><br>
+               <label for="Subclass">Choose a Subclass:</label>
+               <select name="Subclass" tabindex=20>
+                  <option value="Barabarian: Path of the Beast">Barbarian: Path of the Beast</option>
+                  <option value="Barabarian: Path of the Ancestral Guardian">Barbarian: Path of the Ancestral Guardian</option>
+                  <option value="Fighter: Champion">Fighter: Champion</option>
+                  <option value="Fighter: Eldritch Knight">Fighter: Eldritch Knight</option>
+                  <option value="Paladin: Oath of Vengeance">Paladin: Oath of Vengeance</option>
+                  <option value="Paladin: Oath of Redemption">Paladin: Oath of Redemption</option>
+                  <option value="Ranger: Gloomstalker">Ranger: Gloomstalker</option>
+                  <option value="Ranger: Beast Master">Ranger: Beast Master</option>
+                  <option value="Cleric: Light Domain">Cleric: Light Domain</option>
+                  <option value="Cleric: Twilight Domain">Cleric: Twilight Domain</option>
+                  <option value="Monk: Way of the Astral Self">Monk: Way of the Astral Self</option>
+                  <option value="Monk: Way of the Drunken Master">Monk: Way of the Drunken Master</option>
+                  <option value="Warlock: Hexblade">Warlock: Hexblade</option>
+                  <option value="Warlock: Archfey">Warlock: Archfey</option>
+                  <option value="Bard: College of Swords">Bard: College of Swords</option>
+                  <option value="Bard: College of Lore">Bard: College of Lore</option>
+                  <option value="Druid: Circle of Spores">Druid: Circle of Spores</option>
+                  <option value="Druid: Circle of the Moon">Druid: Circle of the Moon</option>
+                  <option value="Rogue: Mastermind">Rogue: Mastermind</option>
+                  <option value="Rogue: Arcane Trickster">Rogue: Arcane Trickster</option>
+                  <option value="Wizard: Divination">Wizard: Divination</option>
+                  <option value="Wizard: Abjuration">Wizard: Abjuration</option>
+                  <option value="Artificer: Alchemist">Artificer: Alchemist</option>
+                  <option value="Artificer: Battle Smith">Artificer: Battle Smith</option>
+                  <option value="Sorcerer: Wild Magic">Sorcerer: Wild Magic</option>
+                  <option value="Sorcerer: Clockwork Soul">Sorcerer: Clockwork Soul</option>
+               </select><br>
+            </fieldset><br>
+
+            <fieldset>
+               <legend>Description</legend>
+               <textarea id="backstory" name="backstory" rows="4" cols="50" tabindex=21>Describe your character here!</textarea>                   
+            </fieldset><br>
+ 
+            <fieldset>
+               <legend>Character Image</legend>
+               <label for="myfile">Select an Image File:</label>
+               <input type="file" id="myfile" name="myfile" tabindex=22>
+            </fieldset><br>
+            <div class="center-button"> 
+               <button type = "submit" name = "submit" value = "nat20" tabindex=23 style='margin-right:16px'>
+               <p>Submit</p>
+               <img src="dnd-5e-character-keep.svg " alt="natural 20 dice" height="80px" width="80px"/>
+               </button>
+
+               <button type = "reset" name = "reset" value = "nat1" tabindex=24>
+               <p>Reset</p>
+               <img src="nat1.jpeg" alt="natural 1 dice"height="80px" width="80px"/>
+               </button>            
+            </div>
+   </form>
+
+</html>
