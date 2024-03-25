@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <link rel="stylesheet" href="resources/jerrier.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>HPU Club Lacrosse Stats</title>
+        <link rel="icon" type="image/x-icon" href="images/High_Point_Panthers_logo.svg.png">
+   </head>
+   <body>
+      <header>
+         <nav>
+         <div id="menu">
+            <ul>
+               <li><a href="index.html" target="_blank">Home</a></li>
+               <li><a href="sched.html" target="_blank">Schedule</a></li>
+               <li><a href="roster.html" target="_blank">Roster</a></li>
+               <li><a class="active" href="stats.html" target="_blank">Stats</a></li>
+               <li><a href="med.html" target="_blank">Media</a></li>
+               <li style="float:right"><a href="join.html" target="_blank">Join Us</a></li>
+            </ul>
+         </div>
+      </nav>
+      </header>
+      <h1>2024 Spring Stats</h1>
+      <div id="teamstats">
+      <canvas id="chartId" aria-label="chart" width="400px"></canvas></div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/chart.min.js"></script>
+      <script>
+         var chrt = document.getElementById("chartId").getContext("2d");
+         var chartId = new Chart(chrt, {
+         type: 'radar',
+         data: {
+            labels: ["Goals", "Assists", "Draw Controls", "Ground Balls", "Wins", "Losses"],
+            datasets: [{
+               label: "2024 Team Stats",
+               data: [76, 15, 31, 35, 4, 3],
+               backgroundColor: ['lightgrey'],
+               pointBackgroundColor: ['yellow', 'aqua', 'pink', 'lightgreen', 'lightblue', 'gold'],
+               borderColor: ['black'],
+               borderWidth: 1,
+               pointRadius: 7,
+            }],
+         },
+         options: {
+            responsive: true,
+            maintainAspectRatio: false, // Allow aspect ratio to change
+
+            elements: {
+               line: {
+                  borderWidth: 5
+               }
+            },
+
+      }
+
+   });
+      </script> <br>
+      <div style="overflow-x:auto;">
+      <table>
+         <tr>
+            <th>Last Name</th><th>First Name</th><th>Number</th><th>Position</th>
+            <th>Games Played</th><th>Goals</th><th>Assists</th><th>Draw Controls</th>
+            <th>Ground Balls</th><th>Goals Per Game</th><th>Assists Per Game</th><th>Points Per Game</th>
+         </tr>
+         
+         <tr id="25">
+            <td>Adams</td><td>Alayna</td><td>25</td><td>Midfield</td>
+            <td>4</td><td>1</td><td>3</td><td>4</td>
+            <td>4</td><td>0.25</td><td>0.75</td><td>1.00</td>
+         </tr>
+         <tr id="37">
+            <td>Adkins</td><td>Nadia</td><td>37</td><td>Attack</td>
+            <td>4</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+         </tr>
+         <tr id="11r">
+            <td>Bahner</td><td>Rilee</td><td>11</td><td>Defense</td>
+            <td>3</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+         </tr>
+         <tr id="31">
+            <td>Boutin</td><td>Lily</td><td>31</td><td>Attack</td>
+            <td>4</td><td>0</td><td>5</td><td>0</td>
+            <td>6</td><td>0.00</td><td>1.25</td><td>1.25</td>
+         </tr>
+         <tr id="36">
+            <td>Brennan</td><td>Naomi</td><td>36</td><td>Defense</td>
+            <td>3</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+         </tr>
+         <tr id="21">
+            <td>Callahan</td><td>Gracie</td><td>21</td><td>Attack</td>
+            <td>4</td><td>0</td><td>0</td><td>0</td>
+            <td>2</td><td>0.00</td><td>0.00</td><td>0.00</td>
+         </tr>
+         <tr id="14">
+            <td>Ciciarelli</td><td>Gabby</td><td>14</td><td>Attack</td>
+            <td>4</td><td>8</td><td>4</td><td>0</td>
+            <td>10</td><td>2.00</td><td>1.00</td><td>3.00</td>
+         </tr>
+         <tr id="3">
+            <td>Fabrizio</td><td>Caroline</td><td>3</td><td>Attack</td>
+            <td>4</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+         </tr>
+         <tr id="19">
+            <td>Franzoni</td><td>Morgan</td><td>19</td><td>Defense</td>
+            <td>4</td><td>0</td><td>0</td><td>0</td>
+            <td>1</td><td>0.00</td><td>0.00</td><td>0.00</td>
+         </tr>
+         <tr id="jenna">
+            <td>Frederick</td><td>Jenna</td><td>0</td><td>Attack</td>
+            <td>2</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+         </tr>
+         <tr id="35">
+            <td>Galletti</td><td>Brooke</td><td>35</td><td>Attack</td>
+            <td>3</td><td>0</td><td>0</td><td>0</td>
+            <td>1</td><td>0.00</td><td>0.00</td><td>0.00</td>
+         </tr>
+         <tr id="16">
+            <td>Gannon</td><td>CJ</td><td>16</td><td>Midfield</td>
+            <td>4</td><td>0</td><td>0</td><td>0</td>
+            <td>7</td><td>0.00</td><td>0.00</td><td>0.00</td>
+         </tr>
+         <tr id="17">
+            <td>Holbrook</td><td>Roya</td><td>17</td><td>Defense</td>
+            <td>4</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+         </tr>
+         <tr id="40">
+            <td>Holman</td><td>Ellie</td><td>40</td><td>Attack</td>
+            <td>4</td><td>0</td><td>0</td><td>0</td>
+            <td>1</td><td>0.00</td><td>0.00</td><td>0.00</td>
+         </tr>
+         <tr id="madison">
+            <td>Horan</td><td>Madison</td><td>0</td><td>Midfield</td>
+            <td>3</td><td>0</td><td>0</td><td>0</td>
+            <td>6</td><td>0.00</td><td>0.00</td><td>0.00</td>
+         </tr>
+         <tr id="39">
+            <td>Ishak</td><td>Gianna</td><td>39</td><td>Attack</td>
+            <td>4</td><td>0</td><td>0</td><td>2</td>
+            <td>8</td><td>0.00</td><td>0.00</td><td>0.00</td>
+         </tr>
+         <tr id="5">
+            <td>Jerrier</td><td>Emma</td><td>5</td><td>Attack</td>
+            <td >4</td><td>4</td><td>3</td><td>0</td>
+            <td>6</td><td>1.00</td><td>0.75</td><td>1.75</td>
+         </tr>
+         <tr id="15">
+            <td>Kim</td><td>Mollie</td><td>15</td><td>Attack</td>
+            <td>4</td><td>0</td><td>0</td><td>0</td>
+            <td>2</td><td>0.00</td><td>0.00</td><td>0.00</td>
+         </tr>
+         <tr id="11">           
+            <td>Koerner</td><td>Lily</td><td>11</td><td>Midfield</td>
+            <td>3</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+         </tr>
+         <tr id="8">
+            <td>Koogle</td><td>Lexi</td><td>8</td><td>Attack</td>
+            <td>3</td><td>0</td><td>1</td><td>0</td>
+            <td>2</td><td>0.00</td><td>0.33</td><td>0.33</td>
+         </tr>
+         <tr id="6">
+            <td>Loving</td><td>Amy</td><td>6</td><td>Midfield</td>
+            <td>4</td><td>6</td><td>4</td><td>6</td>
+            <td>12</td><td>1.50</td><td>1.00</td><td>2.50</td>
+         </tr>
+         <tr id="18">            
+            <td>Marsh</td><td>Bailey</td><td>18</td><td>Midfield</td>
+            <td>4</td><td>4</td><td>4</td><td>4</td>
+            <td>5</td><td>1.00</td><td>1.00</td><td>2.00</td>
+         </tr>
+         <tr id="izzy">           
+            <td>O'Connor</td><td>Izyy</td><td>0</td><td>Defense</td>
+            <td>4</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+         </tr>
+         <tr id="34">           
+            <td>Olivieri</td><td>Anna</td><td>34</td><td>Midfield</td>
+            <td>3</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+         </tr>
+         <tr id="39">
+            <td>Phillips</td><td>Haley</td><td>39</td><td>Midfield</td>
+            <td>3</td><td>8</td><td>3</td><td>20</td>
+            <td>0</td><td>2.67</td><td>1.00</td><td>3.67</td>
+         </tr>
+         <tr id="22k">
+            <td>Sheldon</td><td>Kaitlyn</td><td>22</td><td>Attack</td>
+            <td>3</td><td>0</td><td>0</td><td>0</td>
+            <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+         </tr>
+         <tr id="28">
+            <td>Zucker</td><td>Claire</td><td>28</td><td>Midfield</td>
+            <td>4</td><td>5</td><td>3</td><td>19</td>
+            <td>4</td><td>1.25</td><td>0.75</td><td>2.00</td>
+         </tr>
+      </table><br>
+      </div>
+      <div style="overflow-x:auto;">
+      <table>
+         <tr>
+            <th>Last</th><th>First</th><th>Number</th><th>Position</th><th>Games Player</th>
+            <th>Shots</th><th>Saves</th><th>Goals Against</th><th>Save %</th><th>Goals Against Average</th>
+         </tr>
+         <tr>
+            <td id="29">Roy</td><td>Sarina</td><td>29</td><td>Goalie</td><td>2</td>
+            <td>24</td><td>14</td><td>10</td><td>0.58%</td><td>5.00</td>
+         </tr>
+      </table> <br>
+      </div>
+      <figure>
+         <img src="images/IMG_6320.JPEG" alt="Team Captains Picture" style="max-width:50%; height:auto; display: block; margin-left: auto; margin-right: auto;">
+         <figcaption style="text-align: center;"><strong>2024 Team Captains:</strong> CJ Gannon, Claire Zucker, Alayna Adams, Emma Jerrier</figcaption>
+      </figure>
+      <footer>
+         <p>&copy; Copyright 2024 Emma Jerrier<br>
+            <a href="mailto:jerrieremma@gmail.com" class="fa fa-envelope" id="icon" style="color:white">
+            </a></p>
+      </footer>
+   </body>
+</html>
