@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <link rel="stylesheet" href="resources/jerrier.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>HPU Club Lacrosse</title>
+      <link rel="icon" type="image/x-icon" href="images/High_Point_Panthers_logo.svg.png">
+   </head>
+   <header>
+      <nav>
+      <div id="menu">
+         <ul>
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li><a href="sched.html" target="_blank">Schedule</a></li>
+            <li><a href="roster.html" target="_blank">Roster</a></li>
+            <li><a href="stats.html" target="_blank">Stats</a></li>
+            <li><a href="med.html" target="_blank">Media</a></li>
+            <li style="float:right"><a class="active "href="join.html" target="_blank">Join Us</a></li>
+         </ul>
+      </div>
+   </nav>
+   </header>
+   <body>
+      <main id="signup">
+          <h1>Interested in Playing? Fill Out the Form Below!</h1>
+          <img src="images/IMG_1439.JPG" alt="team picture on lacrosse field" style="max-width:75%; height:auto; display: block; margin-left: auto; margin-right: auto;">
+          <a href="https://www.highpoint.edu/club-sports/" style="color: #440080; display:block; text-align: center;"><strong>Click Here to Find Out More About Club Sports at High Point!</strong></a><br>
+         
+          <form>
+         <div id="data">
+         <label for="fname">First name:</label>
+         <input type="text" id="fname" name="fname" required><br>
+         <label for="lname">Last name:</label>
+         <input type="text" id="lname" name="lname" required><br>
+         <label for="email">Enter your email:</label>
+         <input type="email" id="email" name="email" required><br>
+         <label for="tel">Enter your phone number:</label>
+         <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required><br>
+
+         <p>Where are you from:</p>
+         <select required>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="DC">District Of Columbia</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+         </select> <br>
+         <p>What year are you:</p>
+         <input type="radio" id="freshman" name="schoolyear" value="freshman">
+         <label for="freshman">Freshman</label><br>
+         <input type="radio" id="sophomore" name="schoolyear" value="sophomore">
+         <label for="sophomore">Sophomore</label><br>
+         <input type="radio" id="junior" name="schoolyear" value="junior">
+         <label for="junior">Junior</label><br>
+         <input type="radio" id="senior" name="schoolyear" value="senior">
+         <label for="senior">Senior</label><br>
+         <p>What position(s) do you play:</p>
+         <input type="checkbox" id="attack" name="position" value="attack">
+         <label for="attack">Attack</label><br>
+         <input type="checkbox" id="midfield" name="position" value="midfield">
+         <label for="midfield">Midfield</label><br>
+         <input type="checkbox" id="defense" name="position" value="defense">
+         <label for="defense">Defense</label><br>
+         <input type="checkbox" id="goalie" name="position" value="goalie">
+         <label for="goalie">Goalie</label><br><br>
+         </div>
+         <div id="submit">
+         <input type="submit" value="Submit" id="button">
+         </div>
+
+      </form>
+      </main>
+   </body>
+   <footer>
+      <p>&copy; Copyright 2024 Emma Jerrier<br>
+         <a href="mailto:jerrieremma@gmail.com" class="fa fa-envelope" id="icon" style="color:white">
+         </a></p>
+   </footer>
+</html>
